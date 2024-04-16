@@ -1,0 +1,22 @@
+# This program computes and compares Annie and Daniel's z-scores for Mat106 Module 11
+
+print('What is Annies exam score?') # ask for Annie's exam score
+anniescore = input()
+print('Her exam score is ' + anniescore + '. What is her Italian class mean?') # ask for Annie's class mean
+classmean = input()
+print('Her class mean is ' + classmean + '. What is her standard deviation?') # ask for Annie's standard deviation
+anniesd = input()
+print('By using the zscore formula of z = x - mean / standard deviation, her zscore is ' + str((int(anniescore) - int(classmean)) / int(anniesd)) +'. Her rounded zscore to two decimal places is ' + str(round((int(anniescore) - int(classmean)) / int(anniesd), 2)) + '.')
+print('When we consult the standard normal distribution table, 2.33 shows .99010 or 99.01%. This means she scored better than 99.01% of Italian exam takers.')
+
+print('What is Daniels exam score?') # ask for Daniel's exam score
+danielscore = input()
+print('His exam score is ' + danielscore + '. What is his French class mean?') # ask for Daniel's class mean
+danielclassmean = input()
+print('His class mean is ' + danielclassmean + '. What is his standard deviation?') # ask for Daniel's standard deviation
+danielsd = input()
+print('By using the zscore formula of z = x - mean / standard deviation, his zscore is ' + str((int(danielscore) - int(danielclassmean)) / int(danielsd)) + '.')
+print('When we consult the standard normal distribution table, -0.7 shows .75804 or 75.8%. This means he scored better than 75.8% of French exam takers.')
+
+print('From this data, we can conclude that Annie did better on the exam since she scored better than 99.01% of her class while Daniel scored better than 75.8% of his class. Daniel should probably spend more time studying if he wants to be like Annie.')
+
